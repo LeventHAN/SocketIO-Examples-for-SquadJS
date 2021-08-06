@@ -9,7 +9,7 @@ const io = require("socket.io-client"); // Load the socket.io client
 // STAP 2
 // Declare the IP, PORT and password/token for the socketIO connection
 // Must be the same as in SquadJS
-const ip = "194.26.183.182"; // The IP address where SquadJS is active/installed.
+const ip = "My_IP_Addres_here"; // The IP address where SquadJS is active/installed.
 const port = "7777"; // The port for socket.IO
 const token = "VeryStrongSexyPassword123"; // Password for socket.IO
 
