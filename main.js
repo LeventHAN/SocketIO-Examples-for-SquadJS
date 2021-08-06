@@ -2,6 +2,10 @@
 // I know this is NOT user friendly way of explaining stuff and I promise I will write a UI version of this. Soon™
 // I will put more and more examples of this soon. So please, don't be afraid to ask me questions from our Discord server (SquadJS's Discord Server).
 
+// STAP 0
+// Install 'socket.io-client' package to your existing project that you want to use to communicate with SquadJS.
+// Command via npm would be: `npm i socket.io-client` 
+
 // STAP 1
 // Require / Import the package: "socket.io-client"
 const io = require("socket.io-client"); // Load the socket.io client
