@@ -1,0 +1,98 @@
+{
+	"name": "squadstatjs-pro",
+	"version": "2.0.2",
+	"description": "An advanced version of SquadStatJS (tracking your squad stats) with advanced discord commands to manage your discord server.",
+	"main": "main.js",
+	"scripts": {
+		"start": "node .",
+		"debug": "nodemon node .",
+		"lint": "npm run prettier && npm run eslint",
+		"prettier": "prettier --use-tabs --write .",
+		"eslint": " eslint -c .eslintrc.json --fix .",
+		"document": "jsdoc -t node_modules/docdash main.js -r -R README.md -c jsdoc.json -d ./docs/ ",
+		"ready": "npm run document && npm run lint"
+	},
+	"engines": {
+		"node": ">=14.x"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/11TStudio/SocketIO-Examples-for-SquadJS.git"
+	},
+	"keywords": [
+		"squadjs",
+		"socketIO"
+	],
+	"author": "LeventHAN",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/11TStudio/SocketIO-Examples-for-SquadJS/issues"
+	},
+	"homepage": "https://github.com/11TStudio/SocketIO-Examples-for-SquadJS#readme",
+	"dependencies": {
+		"socket.io-client": "^4.0.1"
+	},
+	"devDependencies": {
+		"docdash": "^1.2.0",
+		"document": "^0.0.0",
+		"eslint": "^7.24.0",
+		"eslint-plugin-jsdoc": "^32.3.0",
+		"jsdoc": "^3.6.6",
+		"jsdoc-tsimport-plugin": "^1.0.5",
+		"nodemon": "^2.0.7",
+		"prettier": "^2.2.1"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.{js,jsx}": [
+			"prettier --write",
+			"eslint --fix",
+			"git add"
+		],
+		"*.{html,css,less,ejs}": [
+			"prettier --write",
+			"git add"
+		]
+	},
+	"eslintConfig": {
+		"env": {
+			"commonjs": true,
+			"es2020": true,
+			"node": true
+		},
+		"extends": "eslint:recommended",
+		"globals": {
+			"Atomics": "readonly",
+			"SharedArrayBuffer": "readonly"
+		},
+		"parserOptions": {
+			"ecmaVersion": 2020
+		},
+		"rules": {
+			"prefer-const": [
+				"error"
+			],
+			"indent": [
+				"error",
+				"tab",
+				{
+					"SwitchCase": 1
+				}
+			],
+			"quotes": [
+				"error",
+				"double"
+			],
+			"semi": [
+				"error",
+				"always"
+			],
+			"linebreak-style": 0,
+			"require-atomic-updates": 0
+		}
+	}
+}
