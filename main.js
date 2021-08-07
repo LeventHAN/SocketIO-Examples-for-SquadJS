@@ -40,7 +40,7 @@ console.log(">>>> SocketIO has no issues at the configuration phase.");
 // ***************************************************
 
 /** I will end up using only 2 diffrent events, which is the chat message event (CHAT_MESSAGE) and the admin braodcast event (ADMIN_BROADCAST).
- * But you can check out the full List of broadcasted events at this link; https://github.com/Thomas-Smyth/SquadJS/blob/e8b4118add3a51704b9f7f26001da61058ec67c0/squad-server/plugins/socket-io-api.js#L6 .
+ * But you can check out the full List of broadcasted events at this link; https://github.com/Thomas-Smyth/SquadJS/blob/master/squad-server/plugins/socket-io-api.js#L6 .
  */
 
 /** Example code for listening to an event.
@@ -80,7 +80,7 @@ socket.on("ADMIN_BROADCAST", (message_content) => {
  */
 
 /** I will end up using only one event, which is the players list event (players).
- * But you can check out the full List of broadcasted events at this link; https://github.com/Thomas-Smyth/SquadJS/blob/dd9a403e6b79c6673b103a2395d8681faa271984/squad-server/rcon.js .
+ * But you can check out the full List of broadcasted events at this link; https://github.com/Thomas-Smyth/SquadJS/blob/master/squad-server/rcon.js .
  */
 
 // EXAMPLE 1
